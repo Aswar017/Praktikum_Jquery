@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Membuat Animasi Form Dengan JQuery | www.malasngoding.com</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#nama").keyup(function () {
+                $("#alamat").slideDown();
+            });
+
+            $("#alamat").keyup(function () {
+                $("#pekerjaan").fadeIn();
+            });
+
+            $("#pekerjaan").keyup(function () {
+                $("#button").fadeIn();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="kotak">
+        <h1>
+            Membuat Animasi Form Dengan JQuery<br />
+        </h1>
+
+        <form>
+            <input type="text" id="nama" placeholder="Masukkan nama .." name="nama" autocomplete="off">
+            <input type="text" id="alamat" placeholder="Masukkan alamat .." name="alamat" autocomplete="off">
+            <input type="text" id="pekerjaan" placeholder="Masukkan pekerjaan .." name="pekerjaan" autocomplete="off">
+            <input type="button" id="button" value="save">
+        </form>
+    </div>
+</body>
+
+<!-- sumber : https://www.malasngoding.com/membuat-animasi-form-dengan-jquery/ -->
+
+</html>
