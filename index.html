@@ -29,11 +29,12 @@
             Membuat Animasi Form Dengan JQuery<br />
         </h1>
 
-        <form>
+        <form method="get" action="get_data.php">
             <input type="text" id="nama" placeholder="Masukkan nama .." name="nama" autocomplete="off">
             <input type="text" id="alamat" placeholder="Masukkan alamat .." name="alamat" autocomplete="off">
             <input type="text" id="pekerjaan" placeholder="Masukkan pekerjaan .." name="pekerjaan" autocomplete="off">
-            <input type="button" id="button" value="save">
+            <input type="hidden" name="formType" value="GET">
+            <input type="submit" id="button" name="Simpan">
         </form>
     </div>
 </body>
